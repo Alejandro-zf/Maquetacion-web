@@ -1,28 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
-    background-color: rgb(0, 0, 0);
+body {
+    background-color: rgb(57, 82, 223);
+}
+
+.conteiner {
+    height: 800px;
+    width: 99%;
+    border: 2px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    width: 100%;
-    height: 30px;
+    background-color: beige;
     text-align: center;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'section section section section'
+        'article2 aside1 aside2 aside2'
+        'article3 article4 article5 article6';
+    grid-template-rows: 10%;
 }
-#content{
-    display: flex;
+
+.header {
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+    line-height: 50px;
 }
-section{
+
+.section {
+    grid-area: section;
     background-color: rgb(77, 72, 72);
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 300px;
 }
-article{
+
+.article1 {
     background-color: rgb(24, 24, 24);
+}
+
+.aside1 {
+    grid-area: aside1;
+    background-color: rgb(20, 14, 14);
+}
+
+.aside2 {
+    grid-area: aside2;
+    background-color: rgb(24, 6, 6);
     color: rgb(255, 255, 255);
-    width: 50%;
-    height: 150px;
-    margin-left: 20rem;
+}
+
+.article2 {
+    grid-area: article2;
+    background-color: rgb(165, 144, 144);
+}
+
+.article3 {
+    grid-area: article3;
+    background-color: rgb(143, 143, 143);
+    color: rgb(255, 255, 255);
+}
+
+.article4 {
+    grid-area: article4;
+    background-color: rgb(228, 119, 119);
+    color: rgb(255, 255, 255);
+}
+
+.article5 {
+    grid-area: article5;
+    background-color: rgb(228, 119, 119);
+    color: rgb(255, 255, 255);
+}
+
+.article6 {
+    grid-area: article6;
+    background-color: rgb(228, 119, 119);
+    color: rgb(255, 255, 255);
 }
